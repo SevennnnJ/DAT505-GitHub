@@ -145,6 +145,10 @@ init();
 geometry();
 render();
 ```
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/earth_specular_2048.jpg)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/roughness_map.jpg)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/transition1.png)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/transition4.png)
 #### S2-02-GeometriesAndMaterialsExercise ####
 The aim of the S2-02 is to array 12 cubes and add special texture.
 #### Description ####
@@ -351,6 +355,7 @@ var render = function () {
 
 render();
 ```
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/texture.gif)
 #### S2-03-S2-03-Material Exercise ####
 The aim of the S2-03 is to array 12 cubes and add different materials.
 

@@ -88,6 +88,16 @@ cubes[i].position.y -= speed[i];
 init();
 animate();
 ```
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/textures/texture0.png)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/textures/texture1.jpg)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/textures/texture2.jpg)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/textures/texture3.jpg)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/textures/texture4.jpg)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/textures/texture5.jpg)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/textures/texture6.jpg)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/textures/texture7.jpg)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/textures/texture8.jpg)
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/textures/texture9.jpg)
 
 #### S7-02-Texture-Eyes-Exercise1 ####
 The aim of the S7-02 is to control the eyes follow the mouse.
@@ -211,3 +221,4 @@ function render() {
 	renderer.render( scene, camera );
 }
 ```
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/images/eye.png)

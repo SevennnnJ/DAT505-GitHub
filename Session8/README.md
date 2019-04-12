@@ -266,6 +266,8 @@ function map_range(value, low1, high1, low2, high2) {
 	return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
 ```
+![image](https://github.com/SevennnnJ/DAT505-GitHub/blob/master/Pictures/images/eye.png)
+
 #### S8-03-3D+Voice Exercise ####
 The aim of the S8-03 is to import 3D model and add voice.
 
