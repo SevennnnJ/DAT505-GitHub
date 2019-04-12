@@ -79,7 +79,7 @@ function init() {
       cubes.push(mesh);
     }
   }
-
+/*
   var boxGeometry1 = new THREE.BoxBufferGeometry(3, 3, 3);
   var boxMaterial1 = new THREE.MeshNormalMaterial({color: 0xFFFFFF});
   var mesh1 = new THREE.Mesh(boxGeometry1, boxMaterial1);
@@ -94,7 +94,7 @@ function init() {
   mesh1.rotation.x = Math.random() * 2 * Math.PI;;
   mesh1.rotation.y = Math.random() * 2 * Math.PI;;
   mesh1.rotation.z = Math.random() * 2 * Math.PI;;
-
+*/
   var rotValX = (Math.random() * 0.05) - 0.025;
   var rotValY = (Math.random() * 0.05) - 0.025;
   var scValX = Math.random() * 20;

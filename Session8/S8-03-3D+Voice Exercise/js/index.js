@@ -46,7 +46,7 @@ function init() {
     var objLoader = new THREE.OBJLoader();
 		objLoader.setMaterials(materials);
 
-  		objLoader.load("ship.obj", function(mesh){//导入.obj格式模型
+  		objLoader.load("ship.obj", function(mesh){//import.obj model
   			mesh.traverse(function(node){
   				if( node instanceof THREE.Mesh ){
   					node.castShadow = true;
