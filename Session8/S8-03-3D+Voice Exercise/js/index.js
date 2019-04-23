@@ -34,7 +34,7 @@ function init() {
 
   var geometry = new THREE.BoxBufferGeometry( 20, 20, 20 );
 
-  for (var i=0; i<500; i++){
+  for (var i=0; i<100; i++){
 
   // Model/material loading!
 	var mtlLoader = new THREE.MTLLoader();
@@ -134,11 +134,13 @@ if ( intersects.length > 0 ) {
   if ( INTERSECTED ) INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
   INTERSECTED = null;
 }*/
+/*
 audioLoader.load( 'audio/Music.wav', function( buffer ) {
   sound.setBuffer( buffer );
   sound.setLoop( false );
   sound.setVolume(2);
   sound.play();
 });
+*/
   renderer.render( scene, camera );
 }

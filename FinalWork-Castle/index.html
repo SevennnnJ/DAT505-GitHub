@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>three.js</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<style>
+		body {
+			background-color: #fff;
+			color: #111;
+			margin: 0px;
+			overflow: hidden;
+			font-family: Monospace;
+			font-size: 13px;
+		}
+
+		#info {
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			padding: 5px;
+			text-align: center;
+		}
+
+		a {
+			color: #0080ff;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #f00;
+		}
+
+		#footer {
+			width: 100%;
+			margin: 2em auto;
+			text-align: center;
+			position: absolute;
+			bottom: 0
+		}
+
+		strong {
+			color: red
+		}
+/*
+		.btn-music {
+			position: absolute;
+			top: 1rem;
+			left: 1rem;
+			width: 3rem;
+			height: 3rem;
+			background: url("images/music.png") center center/70% no-repeat;
+			cursor: pointer
+		}
+
+		.music-off {
+			background: url("images/stop.png") center center/60% no-repeat
+		}
+*/
+		.text {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			font-size: 30px;
+			color: #fafafa;
+			letter-spacing: 0;
+			text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+		}
+
+		#container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 9999;
+		}
+
+		#container canvas {
+			position: fixed;
+			top: 0%;
+			left: 0%;
+			transform: translate(0%, 0%);
+			z-index: 9999;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="jq22"></div>
+	<a class="btn-music"></a>
+	<div id="container"></div>
+	<audio class="music" src="music/Let It Go.mp3"></audio>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="build/three.js"></script>
+	<script src="build/MTLLoader.js"></script>
+	<script src="build/OBJLoader.js"></script>
+	<script src="build/jquery.fireworks.js"></script>
+	<script src="build/WebGL.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="js/objects/Reflector.js"></script>
+  <script src="js/objects/Refractor.js"></script>
+  <script src="js/objects/Water2.js"></script>
+	<script src="js/libs/dat.gui.min.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		$('.jq22').fireworks({
+			sound: false, // sound effect
+			opacity: 0.9,
+			width: '400%',
+			height: '400%'
+		});
+	</script>
+</body>
+
+</html>
