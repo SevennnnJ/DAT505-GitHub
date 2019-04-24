@@ -38,12 +38,12 @@
 
         var container = document.getElementById('container');
         camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 1, 500000000);
-        camera.position.set(420, -855, 1500);
+        camera.position.set(0, -700, 1400);
         // camera.lookAt(0,0,0);
         scene = new THREE.Scene();
 
       //Add water floor
-      var groundGeometry = new THREE.PlaneBufferGeometry( 8000, 8000, 1000, 1000 );//Set up the scale of the ground
+      var groundGeometry = new THREE.PlaneBufferGeometry( 8000, 10000, 1000, 1000 );//Set up the scale of the ground
       var groundMaterial = new THREE.MeshBasicMaterial( { color: 0xE3E3E3 } );
 			var ground = new THREE.Mesh( groundGeometry, groundMaterial );
 			ground.rotation.x = Math.PI * - 0.5;
@@ -62,7 +62,7 @@
 			} );*/
 
 			// add water
-			var waterGeometry = new THREE.PlaneBufferGeometry( 8000, 8000 );//set up the scale of the water
+			var waterGeometry = new THREE.PlaneBufferGeometry( 8000, 10000 );//set up the scale of the water
 			var flowMap = textureLoader.load( 'textures/water/Water_2_M_Normal.jpg' );//add water texture
 			water = new THREE.Water( waterGeometry, {
 //change the float
@@ -125,7 +125,7 @@
 
 //Add the texture to the Fountain
         var textureLoader = new THREE.TextureLoader();
-        var texture = textureLoader.load('textures/marble.jpg');
+        var texture = textureLoader.load('textures/penquan.jpg');
         // Model and material loading
         var objLoader = new THREE.OBJLoader().setPath('models/')
             objLoader.load('fountain.obj', function (object) {

@@ -1,9 +1,12 @@
-# Final Work
-#### Name : JIE XU ####
+# Final Work - JIE XU B161006097
+#### Name :  ####
 This is final homework that code project for DAT505 module.
+
+#### Idea's description ####
+My creative idea comes from the Disneyland at night, the castle under the fireworks at night. Every girl has a princess dream in her heart, and she lives in a castle on the sea. There is a music fountain in front of the door. At night, under the starry sky, she listens to beautiful songs and enjoys beautiful fireworks.
+
 #### Description ####
-
-
+On the basis of my idea, I built a model of a castle and a fountain with 3dmax, and pasted the map on it and successfully imported it into the scene of three.js. Later, in the official website of three.js, I learned about flowing water and luminous spheres, and built luminous stars and flowing sea in the scene. Then we added music on the fountain model and keep clicking on the fountain with the mouse to play music. Finally, keep adjusting the position of each object to show the best scene.
 
 ### Usage ###
 ```html
@@ -66,7 +69,7 @@ function init() {
 
     var container = document.getElementById('container');
     camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 1, 500000000);
-    camera.position.set(420, -855, 1500);
+    camera.position.set(0, -700, 1400);
     // camera.lookAt(0,0,0);
     scene = new THREE.Scene();
 
@@ -76,7 +79,7 @@ In this section, I want to add a water surface under the model of the castle to 
 
 ```javascript
     //Add water floor
-    var groundGeometry = new THREE.PlaneBufferGeometry( 8000, 8000, 1000, 1000 );//Set up the scale of the ground
+    var groundGeometry = new THREE.PlaneBufferGeometry( 8000, 10000, 1000, 1000 );//Set up the scale of the ground
     var groundMaterial = new THREE.MeshBasicMaterial( { color: 0xE3E3E3 } );
     var ground = new THREE.Mesh( groundGeometry, groundMaterial );
     ground.rotation.x = Math.PI * - 0.5;
@@ -95,7 +98,7 @@ In this section, I want to add a water surface under the model of the castle to 
     } );*/
 
     // add water
-    var waterGeometry = new THREE.PlaneBufferGeometry( 8000, 8000 );//set up the scale of the water
+    var waterGeometry = new THREE.PlaneBufferGeometry( 8000, 10000 );//set up the scale of the water
     var flowMap = textureLoader.load( 'textures/water/Water_2_M_Normal.jpg' );//add water texture
     water = new THREE.Water( waterGeometry, {
 //change the float
@@ -312,3 +315,4 @@ function render() {
 }
 
 ```
+### GitHub link ###
