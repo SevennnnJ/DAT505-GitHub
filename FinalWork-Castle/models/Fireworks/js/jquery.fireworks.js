@@ -136,7 +136,7 @@
         }
 
         var count = Math.random() * 10 + 80;
-
+//loop the particle
         for (var i = 0; i < count; i++) {
             var particle = new Particle(this.pos);
             var angle = Math.random() * Math.PI * 2;
@@ -183,7 +183,6 @@
         c.arc(this.pos.x, this.pos.y, this.flick ? Math.random() * this.size / 2 + this.size / 2 : this.size, 0, Math.PI * 2, true);
         c.closePath();
         c.fill();
-
         c.restore();
     };
 
@@ -213,12 +212,7 @@
             // random chance of 1% if rockets is above the middle
             var randomChance = rockets[i].pos.y < (SCREEN_HEIGHT * 2 / 3) ? (Math.random() * 100 <= 1) : false;
 
-            /* Explosion rules
-                 - 80% of screen
-                - going down
-                - close to the mouse
-                - 1% chance of random explosion
-            */
+
             if (rockets[i].pos.y < SCREEN_HEIGHT / 5 || rockets[i].vel.y >= 0 || distance < 50 || randomChance) {
                 rockets[i].explode();
             } else {
