@@ -1,12 +1,22 @@
-# Final Work - JIE XU B161006097
-#### Name :  ####
+# Final Work - XU JIE B161006097
+# 《The carnival》
 This is final homework that code project for DAT505 module.
 
 #### Idea's description ####
-My creative idea comes from the Disneyland at night, the castle under the fireworks at night. Every girl has a princess dream in her heart, and she lives in a castle on the sea. There is a music fountain in front of the door. At night, under the starry sky, she listens to beautiful songs and enjoys beautiful fireworks.
+My creative idea comes from the Disneyland light phantom show , the castle under the fireworks at night. Every girl has a princess dream in her heart, and she lives in a castle on the sea. There is a music fountain in front of the door. At night, under the starry sky, she listens to beautiful songs and enjoys beautiful fireworks.
 
 #### Description ####
 On the basis of my idea, I built a model of a castle and a fountain with 3dmax, and pasted the map on it and successfully imported it into the scene of three.js. Later, in the official website of three.js, I learned about flowing water and luminous spheres, and built luminous stars and flowing sea in the scene. Then we added music on the fountain model and keep clicking on the fountain with the mouse to play music. Finally, keep adjusting the position of each object to show the best scene.
+
+#### Assignment show ####
+![Assignment show](/FinalWork-Castle/Final/1.png)
+
+![Assignment show](/FinalWork-Castle/Final/2.png)
+### A castle model built with 3dmax ###
+![Assignment show](/FinalWork-Castle/Final/3.png)
+### A fountain model ###
+![Assignment show](/FinalWork-Castle/Final/4.png)
+
 
 ### Usage ###
 ```html
@@ -127,6 +137,7 @@ In this section, I want to add a water surface under the model of the castle to 
     document.body.appendChild( renderer.domElement );
 
 ```
+
 Two lights were added to this segment, one normal light and two directional lights, to adjust the intensity of the directional light.
 
 ```javascript
@@ -195,6 +206,7 @@ This section imported the obj model of the castle and fountain, added the MTL te
         });
 
 ```
+
 This cycle creates a sense of the night sky with 1,000 glowing spheres.
 
 ```javascript
