@@ -1,6 +1,6 @@
 # Final Work -《The carnival》
 # Name: XU JIE
-# Student number:B161006097
+# NUA Student ID:B161006097
 # 《The carnival》
 This is final homework that code project for DAT505 module.
 
@@ -9,6 +9,9 @@ https://github.com/SevennnnJ/DAT505-GitHub/tree/master/FinalWork-Castle
 
 #### Idea's description ####
 My creative idea comes from the Disneyland light phantom show , the castle under the fireworks at night. Every girl has a princess dream in her heart, and she lives in a castle on the sea. There is a music fountain in front of the door. At night, under the starry sky, she listens to beautiful songs and enjoys beautiful fireworks.
+![Assignment show](/FinalWork-Castle/Final/5.jpg)
+
+
 
 #### Description ####
 On the basis of my idea, I built a model of a castle and a fountain with 3dmax, and pasted the map on it and successfully imported it into the scene of three.js. Later, in the official website of three.js, I learned about flowing water and luminous spheres, and built luminous stars and flowing sea in the scene. Then we added music on the fountain model and keep clicking on the fountain with the mouse to play music. Finally, keep adjusting the position of each object to show the best scene.
